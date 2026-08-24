@@ -1,0 +1,8 @@
+{
+  "name": "Listy — voice shopping list",
+  "short_name": "Listy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F6F1",
+  "theme_color": "#3E7A4C"
+}

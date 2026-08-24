@@ -1,0 +1,59 @@
+:root {
+  /* Color -- grocery-receipt palette: paper, ink, and two functional accents */
+  --paper: #f7f6f1;
+  --paper-shade: #edeadf;
+  --ink: #232620;
+  --ink-soft: #63675c;
+  --leaf: #3e7a4c;
+  --leaf-dark: #2e5c39;
+  --amber: #d99a2b;
+  --tomato: #c1443a;
+  --line: #d9d4c4;
+  --focus: #1f6feb;
+
+  /* Type */
+  --font-display: 'Archivo Black', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+
+  /* Layout */
+  --radius: 10px;
+  --gap: 16px;
+  --nav-height: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper-shade);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
